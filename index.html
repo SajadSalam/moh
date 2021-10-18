@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>SOMRLY - Graphic Designer</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .full-height {
+            height: 100vh !important;
+        }
+
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+        button {
+            box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.3);
+            transition: box-shadow 500ms;
+
+            z-index: 4444;
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: 0 0px 30px 0 rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+        }
+
+        .conic-gradient {
+            background: #f09433;
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+
+        }
+
+        .expand_button {
+            /* position: absolute;
+            left: 50%;
+            top: 50%; */
+            /* transform: translate(-50%, -50%) */
+        }
+
+        .e-button {
+            color: #fff;
+            background-color: transparent;
+            /* border: 1px solid #000; */
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            float: left;
+            overflow: hidden;
+            padding-top: 0;
+            max-width: 55px;
+            -webkit-transition: max-width 0.3s ease-in-out;
+            -moz-transition: max-width 0.3s ease-in-out;
+            -o-transition: max-width 0.3s ease-in-out;
+            transition: max-width 0.3s linear
+        }
+
+        .e-button-text {
+            display: block;
+            white-space: nowrap;
+            /* color: #fff */
+        }
+
+        .e-button:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0) !important;
+            max-width: 280px;
+            align-items: center;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dbe2ef49a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="home">
+        <div class="d-flex h-100 text-center text-white bg-dark w-100 full-height">
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <header class="mb-auto">
+                    <div>
+                        <h3 class="float-md-start mb-0">
+                            Mohammed Khalil
+                        </h3>
+                        <nav class="nav nav-masthead justify-content-center float-md-end">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <!-- <a class="nav-link" href="#">Contact</a> -->
+                        </nav>
+                    </div>
+                </header>
+
+                <main class="px-3">
+                    <div style="position: absolute; right: 1; top:25% ; left: 0%; bottom: 0%; z-index: 443;"
+                        id="avatar">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <img class="rounded-circle img-thumbnail conic-gradient" width="250"
+                                src="img/profile.jpg" />
+                        </div>
+                        <h1 id="name" class="mt-2" style="display: none;">Mohammed Khalil</h1>
+                    </div>
+                    <div style="position: absolute;z-index: 55555; top:70%; 
+                    left: 0; 
+                    right: 0; 
+                    margin-left: auto; 
+                    margin-right: auto;  ">
+
+                        <p class="lead mt-3" style="display: none;" onclick="sscrollToWork()">
+                            <button id="btnn"
+                                class="btn btn-lg highlight btn-secondary fw-bold border-white bg-white"><i
+                                    class="fas fa-arrow-circle-down"></i>
+                                Learn More</button>
+                        </p>
+                        <div id="social" class="justify-content-center align-content-center w-100 mt-5"
+                            style="display: none;">
+                            <div class="expand_button mx-3" id="pubg" onclick="copyPubg()" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Click to copy"> <a href="#" class="btn e-button btn-md ">
+                                    <span class="e-button-text"><i class="fas fa-gamepad fa-2x"></i> PUBG:
+                                        NxACTiON</span>
+                                </a>
+                            </div>
+                            <a class="text-light mx-3" href="https://www.instagram.com/x.nh/" target="_blank"
+                                role="button">
+                                <!-- telegram icon -->
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a class="text-light mx-3" href="https://t.me/mmmhm" target="_blank" role="button">
+                                <i class="fab fa-telegram-plane fa-2x"></i>
+                            </a>
+                            <a class="text-light mx-3" href="https://discord.com/channels/@me/705245294362624030"
+                                target="_blank" role="button">
+                                <i class="fab fa-discord fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </main>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="work" style="display: none; max-width: 100%; height: 100vh;">
+        <div class="container bg-light mt-5 ">
+            <div class="d-flex justify-content-center align-content-center flex-column invisible p-5 "
+                style="display: none;" id="work2">
+                <h2 class="text-black fw-bolder">Designs</h2>
+
+                <div style="border-bottom: black 10px solid; width: 15%; border-radius: 5px;"></div>
+            </div>
+            <div class="row mt-2 justify-content-center" id="work3">
+                <div class="col-md-4 my-1">
+                    <div class="card border-2 rounded" id="card1" style="display: none;">
+                        <img src="img/design1.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Photo for Eid Aldha
+                            </h4>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-1">
+                    <div class="card border-2 rounded" id="card2" style="display: none;">
+                        <img src="img/design1.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Photo for Eid Aldha
+                            </h4>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-1">
+                    <div class="card border-2 rounded" id="card3" style="display: none;">
+                        <img src="img/design1.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Photo for Eid Aldha
+                            </h4>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/animatedScroll.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script>
+        var scrollTimeout;
+        addEventListener('scroll', function (e) {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(function () {
+                console.log('s');
+                $('#work2').show(500, function () {
+                    $('#work3').show(500, function () {
+                        $('#card1').slideDown(750, function () {
+                            $('#card2').slideDown(500, function () {
+                                $('#card3').slideDown(500);
+                            });
+                        });
+                    });
+
+
+                })
+            }, 100);
+        });
+        function scrollToWork() {
+            $('#work').show(500, function () {
+
+                document.querySelector('#work').scrollIntoView({ behavior: 'smooth', block: 'start' }, function () {
+                    console.log('done');
+                });
+                $('#work2').removeClass('invisible')
+            });
+        }
+        $(document).ready(function () {
+            $('#avatar').animate({
+                right: 0
+            }, 1500, function () {
+                $('#name').slideDown(1500, function () {
+                    $('.lead').fadeIn(1000, function () {
+                        $('#social').addClass('d-flex');
+                        $('#social').fadeIn(1000);
+                    });
+                })
+
+            });
+        });
+        function copyPubg() {
+            navigator.clipboard.writeText('NxACTiON');
+            $('#pubg').attr('title', 'Copied !')
+        }
+        // setInterval(function () {
+        //     console.log('s');
+        //     $('#btnn')
+        //         .addClass('highlight')
+        //         .delay(2000)
+        //         .removeClass('highlight');
+
+        // }, 1000)
+    </script>
+    <!-- <footer class="mt-auto text-white-50">
+        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a
+                href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    </footer> -->
+
+</body>
+
+</html>
