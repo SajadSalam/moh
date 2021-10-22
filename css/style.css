@@ -61,7 +61,7 @@ button:hover {
   float: left;
   overflow: hidden;
   padding-top: 0;
-  max-width: 65px;
+  max-width: 60px;
   -webkit-transition: max-width 0.3s ease-in-out;
   -moz-transition: max-width 0.3s ease-in-out;
   -o-transition: max-width 0.3s ease-in-out;
